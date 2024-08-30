@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{floor_number} - {parking_lot}",
+ "creation": "2024-08-21 18:07:32.215807",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "floor_number",
+  "parking_lot",
+  "display_board",
+  "parking_spot"
+ ],
+ "fields": [
+  {
+   "fieldname": "floor_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Floor Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "parking_lot",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Parking Lot",
+   "options": "Parking Lot",
+   "reqd": 1
+  },
+  {
+   "fieldname": "display_board",
+   "fieldtype": "Link",
+   "label": "Display Board",
+   "options": "Parking Display Board"
+  },
+  {
+   "fieldname": "parking_spot",
+   "fieldtype": "Table",
+   "label": "Parking Spots",
+   "options": "Parking Spot"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-27 15:58:44.744285",
+ "modified_by": "Administrator",
+ "module": "Parking Management",
+ "name": "Parking Floor",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

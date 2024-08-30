@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:TKT-{DD}.{MM}.{YY}-{####}",
+ "creation": "2024-08-26 14:44:30.015175",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ticket_number",
+  "issue_time",
+  "expiry_time",
+  "vehicle",
+  "parking_spot",
+  "payment_status",
+  "total_fee"
+ ],
+ "fields": [
+  {
+   "fieldname": "ticket_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ticket number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "issue_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "issue time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expiry_time",
+   "fieldtype": "Datetime",
+   "label": "expiry_time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Data",
+   "label": "vehicle"
+  },
+  {
+   "fieldname": "parking_spot",
+   "fieldtype": "Link",
+   "label": "parking spot",
+   "options": "Parking Spot"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "payment status",
+   "options": "Paid\nUnpaid"
+  },
+  {
+   "fieldname": "total_fee",
+   "fieldtype": "Currency",
+   "label": "total fee",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-27 17:22:27.441990",
+ "modified_by": "Administrator",
+ "module": "Parking Management",
+ "name": "Parking Ticket",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

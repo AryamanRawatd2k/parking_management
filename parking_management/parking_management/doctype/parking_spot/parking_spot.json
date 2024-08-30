@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "autoname": "format:{spot_number} - {parking_floor} - {parking_lot} ",
+ "creation": "2024-08-23 15:28:36.118016",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "spot_number",
+  "type",
+  "is_occupied",
+  "vehicle",
+  "electric_panel"
+ ],
+ "fields": [
+  {
+   "fieldname": "spot_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "spot number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "type",
+   "options": "Handicapped\nCompact\nLarge\nMotorcycle\nElectric",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_occupied",
+   "fieldtype": "Check",
+   "label": "is occupied"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "vehicle",
+   "options": "Vehicle"
+  },
+  {
+   "fieldname": "electric_panel",
+   "fieldtype": "Data",
+   "label": "electric panel"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-26 15:02:24.982514",
+ "modified_by": "Administrator",
+ "module": "Parking Management",
+ "name": "Parking Spot",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
