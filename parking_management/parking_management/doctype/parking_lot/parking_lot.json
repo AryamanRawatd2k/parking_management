@@ -28,7 +28,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-26 14:55:32.018537",
+ "modified": "2024-09-02 12:12:38.625076",
  "modified_by": "Administrator",
  "module": "Parking Management",
  "name": "Parking Lot",
@@ -43,7 +43,8 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "Administrator",
+   "select": 1,
    "share": 1,
    "write": 1
   }
